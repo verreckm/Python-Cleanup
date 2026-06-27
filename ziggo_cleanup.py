@@ -1,0 +1,137 @@
+import imaplib
+import os
+import ssl
+from getpass import getpass
+import datetime
+import time # Import the time module for delays
+
+# IMAP-serverinstellingen voor Ziggo
+IMAP_SERVER = "imap.ziggo.nl"
+IMAP_PORT_SSL = 993  # Poort voor IMAP over SSL
+IMAP_PORT_TLS = 143  # Poort voor IMAP met STARTTLS
+
+# Gebruikersgegevens (veilig invoeren)
+USERNAME = "a.verreck@home.nl"
+PASSWORD = "131130"
+
+# Mappen die geleegd moeten worden
+FOLDERS_TO_CLEAR = ["Spam"]
+
+# Kies versleutelingsmethode: 'SSL' of 'TLS'
+ENCRYPTION_METHOD = "SSL"  # Verander naar "TLS" als je STARTTLS wilt gebruiken
+
+def clear_folder(imap, folder):
+    """Selecteer een map en verwijder alle berichten."""
+    try:
+        # Selecteer de map
+        status, messages = imap.select(folder)
+        if status != "OK":
+            print(f"Fout: Kon map '{folder}' niet selecteren.")
+            return False
+
+        # Zoek alle berichten in de map
+        status, msg_ids = imap.search(None, "ALL")
+        if status != "OK":
+            print(f"Fout: Kon berichten in '{folder}' niet ophalen.")
+            return False
+
+        msg_ids = msg_ids[0].split()
+        if not msg_ids:
+            print(f"Geen berichten gevonden in '{folder}'.")
+            return True
+
+        # Verwijder alle berichten
+        for msg_id in msg_ids:
+            imap.store(msg_id, "+FLAGS", "\\Deleted")
+
+        # Maak de verwijderingen permanent
+        imap.expunge()
+        print(f"Alle berichten in '{folder}' zijn verwijderd.")
+        return True
+    except Exception as e:
+        print(f"Fout bij het leegmaken van '{folder}': {e}")
+        return False
+
+def connect_imap_ssl():
+    """Maak verbinding met IMAP over SSL."""
+    try:
+        context = ssl.create_default_context()
+        imap = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT_SSL, ssl_context=context)
+        imap.login(USERNAME, PASSWORD)
+        print("Succesvol verbonden met IMAP over SSL.")
+        return imap
+    except imaplib.IMAP4.error as e:
+        print(f"IMAP SSL-fout: {e}")
+        return None
+    except Exception as e:
+        print(f"Algemene SSL-verbindingfout: {e}")
+        return None
+
+def connect_imap_tls():
+    """Maak verbinding met IMAP en upgrade naar TLS met STARTTLS."""
+    try:
+        imap = imaplib.IMAP4(IMAP_SERVER, IMAP_PORT_TLS)
+        imap.starttls(ssl_context=ssl.create_default_context())
+        imap.login(USERNAME, PASSWORD)
+        print("Succesvol verbonden met IMAP over TLS (STARTTLS).")
+        return imap
+    except imaplib.IMAP4.error as e:
+        print(f"IMAP TLS-fout: {e}")
+        return None
+    except Exception as e:
+        print(f"Algemene TLS-verbindingfout: {e}")
+        return None
+
+def monitor_and_clear_folders():
+    """Log in op de IMAP-server en leeg de opgegeven mappen."""
+    imap = None
+    try:
+        # Kies verbindingsmethode op basis van ENCRYPTION_METHOD
+        if ENCRYPTION_METHOD == "SSL":
+            imap = connect_imap_ssl()
+        elif ENCRYPTION_METHOD == "TLS":
+            imap = connect_imap_tls()
+        else:
+            print("Ongeldige versleutelingsmethode. Kies 'SSL' of 'TLS'.")
+            return
+
+        if imap is None:
+            print("Kon geen verbinding maken met de IMAP-server.")
+            return
+
+        # Logboek bijhouden
+        with open("cleanup_log.txt", "a") as log_file:
+            log_file.write(f"\n--- Script uitgevoerd op {datetime.datetime.now()} met {ENCRYPTION_METHOD} ---\n")
+
+        # Leeg elke map
+        for folder in FOLDERS_TO_CLEAR:
+            clear_folder(imap, folder)
+            with open("cleanup_log.txt", "a") as log_file:
+                log_file.write(f"Map '{folder}' is verwerkt.\n")
+
+    except Exception as e:
+        print(f"Onverwachte fout: {e}")
+    finally:
+        try:
+            if imap:
+                imap.logout()
+                print("Verbinding met IMAP-server verbroken.")
+        except:
+            pass
+
+if __name__ == "__main__":
+    # Loop parameters
+    run_interval_minutes = 15
+    max_runs = -1 # Set to -1 for infinite runs, or a positive integer for a fixed number of runs
+
+    run_count = 0
+    while max_runs == -1 or run_count < max_runs:
+        print(f"\n--- Start van de run ({run_count + 1}/{'onbeperkt' if max_runs == -1 else max_runs}) op {datetime.datetime.now()} ---")
+        monitor_and_clear_folders()
+        run_count += 1
+
+        if max_runs == -1 or run_count < max_runs:
+            print(f"Wacht {run_interval_minutes} minuten tot de volgende run...")
+            time.sleep(run_interval_minutes * 60)
+        else:
+            print("Maximum aantal runs bereikt.")
