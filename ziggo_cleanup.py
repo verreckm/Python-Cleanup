@@ -26,7 +26,7 @@ def log(message):
     timestamp = datetime.datetime.now().isoformat()
     line = f"[{timestamp}] {message}"
     print(line)
-    with open(LOG_FILE, "a") as f:
+    with open(LOG_FILE, "w") as f:
         f.write(line + "\n")
 
 
