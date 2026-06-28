@@ -2,7 +2,7 @@ name: Empty Spam Folder v2
 
 on:
   schedule:
-    - cron: "*/15 * * * *" # force trigger registration
+    - cron: "0 * * * *" # force trigger registration
   workflow_dispatch:
 
 env:
