@@ -103,4 +103,3 @@ def monitor_and_clear():
 
 if __name__ == "__main__":
     monitor_and_clear()
-```
