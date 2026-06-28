@@ -1,5 +1,7 @@
 name: Empty Spam Folder
 
+# trigger re-register fix
+
 on:
   schedule:
     - cron: "*/15 * * * *"
