@@ -4,7 +4,7 @@ name: Empty Spam Folder
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 env:
