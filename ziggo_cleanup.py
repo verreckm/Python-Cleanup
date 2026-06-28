@@ -1,4 +1,4 @@
-```python
+
 import imaplib
 import ssl
 import os
