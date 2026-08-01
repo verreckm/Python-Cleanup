@@ -13,6 +13,8 @@ IMAP_PORT_SSL = 993
 
 USERNAME = os.environ["EMAIL_USERNAME"]
 PASSWORD = os.environ["EMAIL_PASSWORD"]
+WP_REPORT_URL = os.environ.get("WP_REPORT_URL")
+WP_API_KEY = os.environ.get("WP_API_KEY")
 
 # WordPress-koppeling
 WP_REPORT_URL = os.environ.get("WP_REPORT_URL")   # bv. https://jouwsite.nl/wp-json/spamcleanup/v1/report
