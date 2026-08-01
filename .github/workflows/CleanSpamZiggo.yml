@@ -1,26 +1,7 @@
-name: Ziggo Spam Cleanup v5
-
-on:
-  schedule:
-    # Ieder uur opruimen
-    - cron: "0 * * * *" # force trigger registration
-
-    # Dagrapport versturen (23:00 UTC)
-    - cron: "0 23 * * *"
-
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-
-  cleanup:
+cleanup:
     if: github.event.schedule == '0 * * * *' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-
     steps:
-
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -30,22 +11,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Dependencies installeren        # ← nieuwe stap
+      - name: Dependencies installeren
         run: pip install -r requirements.txt
 
-      - name: Reports branch ophalen
+      - name: Reports branch ophalen (worktree)
         run: |
           git fetch origin reports:reports || true
-
           if git show-ref --verify --quiet refs/heads/reports
           then
-            git checkout reports
+            git worktree add reports-branch reports
           else
-            git checkout --orphan reports
-            mkdir -p reports
-            git add reports
-            git commit -m "Initial reports branch" || true
+            git worktree add -b reports reports-branch
           fi
+          mkdir -p reports-branch/reports
+          rm -rf reports
+          ln -s reports-branch/reports reports
 
       - name: Cleanup uitvoeren
         env:
@@ -53,18 +33,15 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           WP_REPORT_URL: ${{ secrets.WP_REPORT_URL }}
           WP_API_KEY: ${{ secrets.WP_API_KEY }}
-
         run: |
-          python ziggo_cleanup.py
+          python imap_cleanup.py
 
       - name: Wijzigingen committen
         run: |
-
+          cd reports-branch
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-
           git add reports/
-
           if git diff --cached --quiet
           then
             echo "Geen wijzigingen."
@@ -72,52 +49,3 @@ jobs:
             git commit -m "Update cleanup report"
             git push origin reports
           fi
-
-
-  daily-report:
-
-    if: github.event.schedule == '0 23 * * *'
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - uses: actions/checkout@v4
-        with:
-          ref: reports
-
-      - name: Rapport mailen
-        uses: dawidd6/action-send-mail@v3
-        with:
-
-          server_address: smtp.ziggo.nl
-          server_port: 587
-
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          WP_REPORT_URL: ${{ secrets.WP_REPORT_URL }}
-          WP_API_KEY: ${{ secrets.WP_API_KEY }}
-
-          subject: Dagelijks Spam Cleanup Rapport
-
-          from: ${{ secrets.EMAIL_USERNAME }}
-          to: ${{ secrets.REPORT_EMAIL }}
-
-          body: |
-            In de bijlage staat het spamrapport van vandaag.
-
-          attachments: reports/cleanup_report.txt
-
-      - name: Rapport leegmaken
-        run: |
-
-          rm -f reports/cleanup_report.txt
-          rm -f reports/daily_cleanup.json
-
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          git add reports
-
-          git commit -m "Start nieuwe dag" || true
-
-          git push
