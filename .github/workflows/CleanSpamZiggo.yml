@@ -3,7 +3,6 @@ on:
   schedule:
     # Ieder uur opruimen
     - cron: "0 * * * *" # force trigger registration
-    - timezone: "Netherlands/Amsterdam"
     # Dagrapport versturen (23:00 UTC)
     - cron: "0 23 * * *"
   workflow_dispatch:
