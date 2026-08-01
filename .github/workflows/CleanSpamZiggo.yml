@@ -55,7 +55,7 @@ jobs:
           WP_API_KEY: ${{ secrets.WP_API_KEY }}
 
         run: |
-          python ziggo_cleanup.py
+          python imap_cleanup.py
 
       - name: Wijzigingen committen
         run: |
