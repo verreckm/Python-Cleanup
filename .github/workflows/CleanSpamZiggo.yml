@@ -1,3 +1,21 @@
+name: Ziggo Spam Cleanup v6
+
+on:
+  schedule:
+    # Ieder uur opruimen
+    - cron: "0 * * * *" # force trigger registration
+
+    # Dagrapport versturen (23:00 UTC)
+    - cron: "0 23 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+
+
 cleanup:
     if: github.event.schedule == '0 * * * *' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
