@@ -16,5 +16,11 @@
     "folder": "Spam",
     "sender": "M V <m.verreck@gmail.com>",
     "subject": "test doorgeven naar dashboard"
+  },
+  {
+    "timestamp": "19:40",
+    "folder": "Spam",
+    "sender": "M V <m.verreck@gmail.com>",
+    "subject": "test dashboard"
   }
 ]
