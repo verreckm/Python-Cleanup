@@ -1,4 +1,4 @@
-name: Ziggo Spam Cleanup v4
+name: Ziggo Spam Cleanup v5
 
 on:
   schedule:
@@ -55,7 +55,7 @@ jobs:
           WP_API_KEY: ${{ secrets.WP_API_KEY }}
 
         run: |
-          python imap_cleanup.py
+          python ziggo_cleanup.py
 
       - name: Wijzigingen committen
         run: |
