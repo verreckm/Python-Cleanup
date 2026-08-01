@@ -94,6 +94,8 @@ jobs:
 
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
+          WP_REPORT_URL: ${{ secrets.WP_REPORT_URL }}
+          WP_API_KEY: ${{ secrets.WP_API_KEY }}
 
           subject: Dagelijks Spam Cleanup Rapport
 
