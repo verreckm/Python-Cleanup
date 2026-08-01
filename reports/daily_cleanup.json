@@ -22,5 +22,11 @@
     "folder": "Spam",
     "sender": "M V <m.verreck@gmail.com>",
     "subject": "test dashboard"
+  },
+  {
+    "timestamp": "19:44",
+    "folder": "Spam",
+    "sender": "M V <m.verreck@gmail.com>",
+    "subject": "nog een testje"
   }
 ]

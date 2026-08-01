@@ -1,2 +1,3 @@
-[2026-08-01T19:42:13] Verbonden met IMAP.
-[2026-08-01T19:42:13] Deze run verwijderd: 0
+[2026-08-01T19:44:03] Verbonden met IMAP.
+[2026-08-01T19:44:03] Verwijderen | M V <m.verreck@gmail.com> | nog een testje
+[2026-08-01T19:44:04] Deze run verwijderd: 1
