@@ -1,202 +1,159 @@
 import imaplib
 import ssl
 import os
+import json
 import datetime
 import email
+from collections import defaultdict
 from email.header import decode_header
 
-# IMAP-serverinstellingen
 IMAP_SERVER = "imap.ziggo.nl"
 IMAP_PORT_SSL = 993
 
-# Credentials via GitHub Secrets / Environment Variables
 USERNAME = os.environ["EMAIL_USERNAME"]
 PASSWORD = os.environ["EMAIL_PASSWORD"]
 
-# Mappen die geleegd moeten worden
 FOLDERS_TO_CLEAR = ["Spam"]
-
-# Zet op True om eerst te testen zonder te verwijderen
 DRY_RUN = False
 
-LOG_FILE = "cleanup_log.txt"
+REPORT_DIR = "reports"
+os.makedirs(REPORT_DIR, exist_ok=True)
+
+LOG_FILE = os.path.join(REPORT_DIR, "cleanup_log.txt")
+JSON_FILE = os.path.join(REPORT_DIR, "daily_cleanup.json")
+REPORT_FILE = os.path.join(REPORT_DIR, "cleanup_report.txt")
 
 
 def log(message):
-    """Schrijft naar console én logfile."""
-    timestamp = datetime.datetime.now().isoformat()
+    timestamp = datetime.datetime.now().isoformat(timespec="seconds")
     line = f"[{timestamp}] {message}"
-
     print(line)
-
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(line + "\n")
 
 
 def decode_mime_header(value):
-    """Decodeert e-mail headers zoals Subject en From."""
     if not value:
         return ""
-
-    decoded_parts = decode_header(value)
     result = ""
-
-    for text, encoding in decoded_parts:
-        if isinstance(text, bytes):
-            result += text.decode(encoding or "utf-8", errors="replace")
+    for txt, enc in decode_header(value):
+        if isinstance(txt, bytes):
+            result += txt.decode(enc or "utf-8", errors="replace")
         else:
-            result += text
-
+            result += txt
     return result
 
 
+def load_history():
+    if os.path.exists(JSON_FILE):
+        with open(JSON_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+
+def save_history(history):
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+
+
+def build_report(history):
+    grouped = defaultdict(list)
+    for item in history:
+        grouped[item["folder"]].append(item)
+
+    with open(REPORT_FILE, "w", encoding="utf-8") as f:
+        f.write("Spam Cleanup Rapport\n")
+        f.write("=" * 40 + "\n\n")
+        f.write(f"Laatste update: {datetime.datetime.now():%d-%m-%Y %H:%M}\n\n")
+        if not history:
+            f.write("Er zijn vandaag geen berichten verwijderd.\n")
+            return
+        total = 0
+        for folder, msgs in grouped.items():
+            f.write(f"Map: {folder}\nAantal verwijderd: {len(msgs)}\n\n")
+            total += len(msgs)
+            for m in msgs:
+                f.write(f"• {m['timestamp']} | {m['sender']}\n")
+                f.write(f"  {m['subject']}\n\n")
+        f.write("=" * 40 + "\n")
+        f.write(f"Totaal verwijderd: {total}\n")
+
+
 def connect_imap_ssl():
-    """Maak verbinding met Ziggo IMAP via SSL."""
     try:
-        context = ssl.create_default_context()
-
-        imap = imaplib.IMAP4_SSL(
-            IMAP_SERVER,
-            IMAP_PORT_SSL,
-            ssl_context=context
-        )
-
+        imap = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT_SSL, ssl_context=ssl.create_default_context())
         imap.login(USERNAME, PASSWORD)
-
-        log("Verbonden met IMAP (SSL).")
-
+        log("Verbonden met IMAP.")
         return imap
-
     except Exception as e:
         log(f"Verbindingsfout: {e}")
         return None
 
 
-def clear_folder(imap, folder):
-    """Leeg een map en log afzender + onderwerp van verwijderde berichten."""
-    try:
-        status, _ = imap.select(folder)
-
-        if status != "OK":
-            log(f"Kan map niet openen: {folder}")
-            return 0
-
-        status, msg_ids = imap.search(None, "ALL")
-
-        if status != "OK":
-            log(f"Zoekfout in map: {folder}")
-            return 0
-
-        msg_ids = msg_ids[0].split()
-
-        if not msg_ids:
-            log(f"{folder}: geen berichten gevonden.")
-            return 0
-
-        log(f"{folder}: {len(msg_ids)} berichten gevonden.")
-
-        deleted_count = 0
-
-        for msg_id in msg_ids:
-
-            sender = "Onbekend"
-            subject = "Geen onderwerp"
-
-            try:
-                status, msg_data = imap.fetch(
-                    msg_id,
-                    "(RFC822.HEADER)"
-                )
-
-                if status == "OK" and msg_data and msg_data[0]:
-
-                    msg = email.message_from_bytes(
-                        msg_data[0][1]
-                    )
-
-                    sender = decode_mime_header(
-                        msg.get("From")
-                    )
-
-                    subject = decode_mime_header(
-                        msg.get("Subject")
-                    )
-
-            except Exception as e:
-                log(
-                    f"Fout bij ophalen headers van bericht "
-                    f"{msg_id.decode()}: {e}"
-                )
-
-            log(
-                f"Verwijderen | Afzender: {sender} | "
-                f"Onderwerp: {subject}"
-            )
-
-            if not DRY_RUN:
-                imap.store(
-                    msg_id,
-                    "+FLAGS",
-                    "\\Deleted"
-                )
-
-            deleted_count += 1
-
-        if not DRY_RUN:
-            imap.expunge()
-
-        if DRY_RUN:
-            log(
-                f"[DRY RUN] {folder}: zou "
-                f"{deleted_count} berichten verwijderen."
-            )
-        else:
-            log(
-                f"{folder}: {deleted_count} berichten verwijderd."
-            )
-
-        return deleted_count
-
-    except Exception as e:
-        log(f"Fout in map {folder}: {e}")
+def clear_folder(imap, folder, history):
+    status, _ = imap.select(folder)
+    if status != "OK":
         return 0
 
+    status, ids = imap.search(None, "ALL")
+    if status != "OK":
+        return 0
 
-def monitor_and_clear():
-    """Hoofdfunctie."""
+    ids = ids[0].split()
+    count = 0
 
-    # Maak bij iedere run een nieuw logbestand
-    with open(LOG_FILE, "w", encoding="utf-8") as f:
-        f.write(
-            f"=== Nieuwe run gestart op "
-            f"{datetime.datetime.now().isoformat()} ===\n"
-        )
-
-    log("=== Start run ===")
-
-    imap = connect_imap_ssl()
-
-    if not imap:
-        log("Geen verbinding. Stop.")
-        return
-
-    total_deleted = 0
-
-    try:
-        for folder in FOLDERS_TO_CLEAR:
-            deleted = clear_folder(imap, folder)
-            total_deleted += deleted
-
-        log(f"TOTAAL verwijderd: {total_deleted}")
-
-    finally:
+    for msg_id in ids:
+        sender = "Onbekend"
+        subject = "Geen onderwerp"
         try:
-            imap.logout()
-            log("Uitgelogd van IMAP-server.")
+            status, data = imap.fetch(msg_id, "(RFC822.HEADER)")
+            if status == "OK" and data and data[0]:
+                msg = email.message_from_bytes(data[0][1])
+                sender = decode_mime_header(msg.get("From"))
+                subject = decode_mime_header(msg.get("Subject"))
         except Exception:
             pass
 
-    log("=== Einde run ===")
+        history.append({
+            "timestamp": datetime.datetime.now().strftime("%H:%M"),
+            "folder": folder,
+            "sender": sender,
+            "subject": subject
+        })
+
+        log(f"Verwijderen | {sender} | {subject}")
+
+        if not DRY_RUN:
+            imap.store(msg_id, "+FLAGS", "\\Deleted")
+        count += 1
+
+    if not DRY_RUN and count:
+        imap.expunge()
+
+    return count
+
+
+def monitor_and_clear():
+    open(LOG_FILE, "w", encoding="utf-8").close()
+    history = load_history()
+
+    imap = connect_imap_ssl()
+    if not imap:
+        return
+
+    total = 0
+    try:
+        for folder in FOLDERS_TO_CLEAR:
+            total += clear_folder(imap, folder, history)
+    finally:
+        try:
+            imap.logout()
+        except Exception:
+            pass
+
+    save_history(history)
+    build_report(history)
+    log(f"Deze run verwijderd: {total}")
 
 
 if __name__ == "__main__":
