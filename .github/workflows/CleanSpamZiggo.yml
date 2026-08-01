@@ -50,7 +50,7 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
 
         run: |
-          python scripts/cleanup.py
+          python scripts/ziggo_cleanup.py
 
       - name: Wijzigingen committen
         run: |
