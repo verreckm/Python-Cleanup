@@ -4,6 +4,7 @@ import os
 import json
 import datetime
 import email
+import requests
 from collections import defaultdict
 from email.header import decode_header
 
@@ -12,6 +13,10 @@ IMAP_PORT_SSL = 993
 
 USERNAME = os.environ["EMAIL_USERNAME"]
 PASSWORD = os.environ["EMAIL_PASSWORD"]
+
+# WordPress-koppeling
+WP_REPORT_URL = os.environ.get("WP_REPORT_URL")   # bv. https://jouwsite.nl/wp-json/spamcleanup/v1/report
+WP_API_KEY = os.environ.get("WP_API_KEY")
 
 FOLDERS_TO_CLEAR = ["Spam"]
 DRY_RUN = False
@@ -133,9 +138,38 @@ def clear_folder(imap, folder, history):
     return count
 
 
+def push_to_wordpress(new_items):
+    """Stuur alleen de items van déze run naar het WordPress dashboard."""
+    if not WP_REPORT_URL or not WP_API_KEY:
+        log("WP_REPORT_URL of WP_API_KEY niet ingesteld — WordPress-push overgeslagen.")
+        return
+
+    if not new_items:
+        log("Geen nieuwe items deze run, WordPress-push overgeslagen.")
+        return
+
+    payload = {
+        "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "history": new_items,
+    }
+
+    try:
+        response = requests.post(
+            WP_REPORT_URL,
+            json=payload,
+            headers={"X-API-Key": WP_API_KEY},
+            timeout=15,
+        )
+        response.raise_for_status()
+        log(f"WordPress-push gelukt: {response.json()}")
+    except requests.exceptions.RequestException as e:
+        log(f"WordPress-push mislukt: {e}")
+
+
 def monitor_and_clear():
     open(LOG_FILE, "w", encoding="utf-8").close()
     history = load_history()
+    start_index = len(history)  # alles vanaf hier is nieuw voor deze run
 
     imap = connect_imap_ssl()
     if not imap:
@@ -151,8 +185,11 @@ def monitor_and_clear():
         except Exception:
             pass
 
+    new_items = history[start_index:]
+
     save_history(history)
     build_report(history)
+    push_to_wordpress(new_items)
     log(f"Deze run verwijderd: {total}")
 
 
