@@ -1,0 +1,116 @@
+name: Ziggo Spam Cleanup v4
+
+on:
+  schedule:
+    # Ieder uur opruimen
+    - cron: "0 * * * *" # force trigger registration
+
+    # Dagrapport versturen (23:00 UTC)
+    - cron: "0 23 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+
+  cleanup:
+    if: github.event.schedule == '0 * * * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python installeren
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Reports branch ophalen
+        run: |
+          git fetch origin reports:reports || true
+
+          if git show-ref --verify --quiet refs/heads/reports
+          then
+            git checkout reports
+          else
+            git checkout --orphan reports
+            mkdir -p reports
+            git add reports
+            git commit -m "Initial reports branch" || true
+          fi
+
+      - name: Cleanup uitvoeren
+        env:
+          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+
+        run: |
+          python ziggo_cleanup.py
+
+      - name: Wijzigingen committen
+        run: |
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add reports/
+
+          if git diff --cached --quiet
+          then
+            echo "Geen wijzigingen."
+          else
+            git commit -m "Update cleanup report"
+            git push origin reports
+          fi
+
+
+  daily-report:
+
+    if: github.event.schedule == '0 23 * * *'
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+        with:
+          ref: reports
+
+      - name: Rapport mailen
+        uses: dawidd6/action-send-mail@v3
+        with:
+
+          server_address: smtp.ziggo.nl
+          server_port: 587
+
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+
+          subject: Dagelijks Spam Cleanup Rapport
+
+          from: ${{ secrets.EMAIL_USERNAME }}
+          to: ${{ secrets.REPORT_EMAIL }}
+
+          body: |
+            In de bijlage staat het spamrapport van vandaag.
+
+          attachments: reports/cleanup_report.txt
+
+      - name: Rapport leegmaken
+        run: |
+
+          rm -f reports/cleanup_report.txt
+          rm -f reports/daily_cleanup.json
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add reports
+
+          git commit -m "Start nieuwe dag" || true
+
+          git push

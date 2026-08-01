@@ -1,0 +1,2 @@
+[2026-08-01T16:38:56] Verbonden met IMAP.
+[2026-08-01T16:38:56] Deze run verwijderd: 0
