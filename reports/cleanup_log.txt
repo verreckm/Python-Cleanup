@@ -1,4 +1,4 @@
-[2026-08-01T20:05:24] Verbonden met IMAP.
-[2026-08-01T20:05:24] Verwijderen | M V <m.verreck@gmail.com> | test 3 spam
-[2026-08-01T20:05:25] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
-[2026-08-01T20:05:25] Deze run verwijderd: 1
+[2026-08-01T20:16:06] Verbonden met IMAP.
+[2026-08-01T20:16:07] Verwijderen | M V <m.verreck@gmail.com> | dashboard check
+[2026-08-01T20:16:08] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-01T20:16:08] Deze run verwijderd: 1

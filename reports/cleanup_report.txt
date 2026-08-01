@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 01-08-2026 20:05
+Laatste update: 01-08-2026 20:16
 
 Map: Spam
-Aantal verwijderd: 6
+Aantal verwijderd: 7
 
 • 16:42 | M V <m.verreck@gmail.com>
   test cleanup
@@ -24,5 +24,8 @@ Aantal verwijderd: 6
 • 20:05 | M V <m.verreck@gmail.com>
   test 3 spam
 
+• 20:16 | M V <m.verreck@gmail.com>
+  dashboard check
+
 ========================================
-Totaal verwijderd: 6
+Totaal verwijderd: 7
