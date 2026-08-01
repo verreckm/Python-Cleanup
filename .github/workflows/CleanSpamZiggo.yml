@@ -30,6 +30,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Dependencies installeren        # ← nieuwe stap
+        run: pip install -r requirements.txt
+
       - name: Reports branch ophalen
         run: |
           git fetch origin reports:reports || true
@@ -48,6 +51,8 @@ jobs:
         env:
           EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          WP_REPORT_URL: ${{ secrets.WP_REPORT_URL }}
+          WP_API_KEY: ${{ secrets.WP_API_KEY }}
 
         run: |
           python ziggo_cleanup.py
