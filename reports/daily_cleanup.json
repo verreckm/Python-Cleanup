@@ -4,5 +4,11 @@
     "folder": "Spam",
     "sender": "M V <m.verreck@gmail.com>",
     "subject": "test cleanup"
+  },
+  {
+    "timestamp": "19:11",
+    "folder": "Spam",
+    "sender": "M V <m.verreck@gmail.com>",
+    "subject": "test verplaatsen naar dashboard"
   }
 ]
