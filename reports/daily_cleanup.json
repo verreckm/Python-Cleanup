@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "timestamp": "16:42",
+    "folder": "Spam",
+    "sender": "M V <m.verreck@gmail.com>",
+    "subject": "test cleanup"
+  }
+]
