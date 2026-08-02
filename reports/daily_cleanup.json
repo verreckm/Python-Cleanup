@@ -5,5 +5,12 @@
     "folder": "Spam",
     "sender": "M V <m.verreck@gmail.com>",
     "subject": "Test correcte timezone"
+  },
+  {
+    "date": "2026-08-02",
+    "timestamp": "08:48",
+    "folder": "Spam",
+    "sender": "m.verreck@gmail.com",
+    "subject": "check naam in dashboard"
   }
 ]
