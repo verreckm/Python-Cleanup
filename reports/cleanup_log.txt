@@ -1,3 +1,4 @@
-[2026-08-02T05:12:33] Verbonden met IMAP.
-[2026-08-02T05:12:33] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-02T05:12:33] Deze run verwijderd: 0
+[2026-08-02T08:29:11] 7 oude entry/entries opgeruimd uit daily_cleanup.json (niet van vandaag).
+[2026-08-02T08:29:12] Verbonden met IMAP.
+[2026-08-02T08:29:12] Geen nieuwe items deze run, WordPress-push overgeslagen.
+[2026-08-02T08:29:12] Deze run verwijderd: 0
