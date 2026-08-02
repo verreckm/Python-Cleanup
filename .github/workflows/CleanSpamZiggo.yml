@@ -1,10 +1,8 @@
-name: Ziggo Spam Cleanup v6
+name: Ziggo Spam Cleanup v7
 on:
   schedule:
     # Ieder uur opruimen
     - cron: "0 * * * *" # force trigger registration
-    # Dagrapport versturen (23:00 UTC)
-    - cron: "0 23 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -57,35 +55,3 @@ jobs:
             git commit -m "Update cleanup report"
             git push origin reports
           fi
-
-  daily-report:
-    if: github.event.schedule == '0 23 * * *'
-    runs-on: ubuntu-latest
-    env:
-      TZ: Europe/Amsterdam
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: reports
-      - name: Rapport mailen
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.ziggo.nl
-          server_port: 587
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: Dagelijks Spam Cleanup Rapport
-          from: ${{ secrets.EMAIL_USERNAME }}
-          to: ${{ secrets.REPORT_EMAIL }}
-          body: |
-            In de bijlage staat het spamrapport van vandaag.
-          attachments: reports/cleanup_report.txt
-      - name: Rapport leegmaken
-        run: |
-          rm -f reports/cleanup_report.txt
-          rm -f reports/daily_cleanup.json
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add reports
-          git commit -m "Start nieuwe dag" || true
-          git push
