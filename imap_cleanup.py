@@ -7,6 +7,7 @@ import email
 import requests
 from collections import defaultdict
 from email.header import decode_header
+from email.utils import parseaddr
 
 IMAP_SERVER = "imap.ziggo.nl"
 IMAP_PORT_SSL = 993
@@ -127,7 +128,9 @@ def clear_folder(imap, folder, history):
             status, data = imap.fetch(msg_id, "(RFC822.HEADER)")
             if status == "OK" and data and data[0]:
                 msg = email.message_from_bytes(data[0][1])
-                sender = decode_mime_header(msg.get("From"))
+                # parseaddr splitst "Naam <adres>" -> ("Naam", "adres"); we bewaren alleen het adres.
+                _, sender = parseaddr(msg.get("From"))
+                sender = sender or "Onbekend"
                 subject = decode_mime_header(msg.get("Subject"))
         except Exception:
             pass
