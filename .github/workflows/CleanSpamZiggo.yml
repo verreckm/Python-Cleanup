@@ -12,6 +12,8 @@ jobs:
   cleanup:
     if: github.event.schedule == '0 * * * *' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Amsterdam
     steps:
       - uses: actions/checkout@v4
         with:
@@ -59,6 +61,8 @@ jobs:
   daily-report:
     if: github.event.schedule == '0 23 * * *'
     runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Amsterdam
     steps:
       - uses: actions/checkout@v4
         with:
