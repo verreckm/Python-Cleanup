@@ -50,10 +50,23 @@ def decode_mime_header(value):
 
 
 def load_history():
-    if os.path.exists(JSON_FILE):
-        with open(JSON_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return []
+    """Laadt de historie en gooit automatisch entries van vorige dagen weg,
+    zodat het bestand niet blijft groeien zonder aparte opschoon-job."""
+    if not os.path.exists(JSON_FILE):
+        return []
+
+    with open(JSON_FILE, "r", encoding="utf-8") as f:
+        history = json.load(f)
+
+    today = datetime.date.today().isoformat()
+    # Oude entries zonder "date"-veld (van vóór deze wijziging) worden ook opgeruimd.
+    pruned = [item for item in history if item.get("date") == today]
+
+    removed = len(history) - len(pruned)
+    if removed:
+        log(f"{removed} oude entry/entries opgeruimd uit daily_cleanup.json (niet van vandaag).")
+
+    return pruned
 
 
 def save_history(history):
@@ -120,6 +133,7 @@ def clear_folder(imap, folder, history):
             pass
 
         history.append({
+            "date": datetime.date.today().isoformat(),
             "timestamp": datetime.datetime.now().strftime("%H:%M"),
             "folder": folder,
             "sender": sender,
