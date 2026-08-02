@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "date": "2026-08-02",
+    "timestamp": "08:31",
+    "folder": "Spam",
+    "sender": "M V <m.verreck@gmail.com>",
+    "subject": "Test correcte timezone"
+  }
+]

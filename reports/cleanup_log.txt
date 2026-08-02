@@ -1,4 +1,4 @@
-[2026-08-02T08:29:11] 7 oude entry/entries opgeruimd uit daily_cleanup.json (niet van vandaag).
-[2026-08-02T08:29:12] Verbonden met IMAP.
-[2026-08-02T08:29:12] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-02T08:29:12] Deze run verwijderd: 0
+[2026-08-02T08:31:04] Verbonden met IMAP.
+[2026-08-02T08:31:04] Verwijderen | M V <m.verreck@gmail.com> | Test correcte timezone
+[2026-08-02T08:31:06] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-02T08:31:06] Deze run verwijderd: 1

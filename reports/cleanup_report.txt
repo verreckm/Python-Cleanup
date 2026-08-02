@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 02-08-2026 08:29
+Laatste update: 02-08-2026 08:31
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 08:31 | M V <m.verreck@gmail.com>
+  Test correcte timezone
+
+========================================
+Totaal verwijderd: 1
