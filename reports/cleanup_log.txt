@@ -1,3 +1,4 @@
-[2026-08-02T13:08:59] Verbonden met IMAP.
-[2026-08-02T13:09:00] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-02T13:09:00] Deze run verwijderd: 0
+[2026-08-02T14:49:55] Verbonden met IMAP.
+[2026-08-02T14:49:56] Verwijderen | qulieroglu1@outlook.com | Automatic reply: —Laatste aanmaning 00566797—
+[2026-08-02T14:49:58] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-02T14:49:58] Deze run verwijderd: 1

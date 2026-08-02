@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 02-08-2026 13:09
+Laatste update: 02-08-2026 14:49
 
 Map: Spam
-Aantal verwijderd: 2
+Aantal verwijderd: 3
 
 • 08:31 | M V <m.verreck@gmail.com>
   Test correcte timezone
@@ -12,5 +12,8 @@ Aantal verwijderd: 2
 • 08:48 | m.verreck@gmail.com
   check naam in dashboard
 
+• 14:49 | qulieroglu1@outlook.com
+  Automatic reply: —Laatste aanmaning 00566797—
+
 ========================================
-Totaal verwijderd: 2
+Totaal verwijderd: 3
