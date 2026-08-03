@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "date": "2026-08-03",
+    "timestamp": "19:46",
+    "folder": "Spam",
+    "sender": "info@mail.limburger.nl",
+    "subject": "Uw nieuwe e-book is er!"
+  }
+]

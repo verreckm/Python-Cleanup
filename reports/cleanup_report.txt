@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 03-08-2026 17:34
+Laatste update: 03-08-2026 19:46
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 19:46 | info@mail.limburger.nl
+  Uw nieuwe e-book is er!
+
+========================================
+Totaal verwijderd: 1
