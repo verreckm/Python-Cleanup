@@ -1,3 +1,5 @@
-[2026-08-04T19:26:45] Verbonden met IMAP.
-[2026-08-04T19:26:45] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-04T19:26:45] Deze run verwijderd: 0
+[2026-08-04T21:14:37] Verbonden met IMAP.
+[2026-08-04T21:14:38] Verwijderen | techpulse@bluepixlmedia.info | Mobiel: waarom is een Galaxy Z Fold 8 bijna de helft duurder in Europa dan in Korea & Android-smartphones dit najaar fors duurder door Qualcomm
+[2026-08-04T21:14:38] Verwijderen | info_at_gytisautek.no@kluswijs.nl | Leveringsupdate: UwBestelling isOnderweg
+[2026-08-04T21:14:40] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-08-04T21:14:40] Deze run verwijderd: 2
