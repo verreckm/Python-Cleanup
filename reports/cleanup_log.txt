@@ -1,3 +1,5 @@
-[2026-08-04T22:59:26] Verbonden met IMAP.
-[2026-08-04T22:59:27] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-04T22:59:27] Deze run verwijderd: 0
+[2026-08-05T00:09:48] 4 oude entry/entries opgeruimd uit daily_cleanup.json (niet van vandaag).
+[2026-08-05T00:09:49] Verbonden met IMAP.
+[2026-08-05T00:09:50] Verwijderen | info_at_gytisautek.no@kluswijs.nl | Leveringsupdate: UwBestelling isOnderweg
+[2026-08-05T00:09:51] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-05T00:09:51] Deze run verwijderd: 1
