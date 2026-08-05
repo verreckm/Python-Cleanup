@@ -1,3 +1,4 @@
-[2026-08-05T19:15:26] Verbonden met IMAP.
-[2026-08-05T19:15:27] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-05T19:15:27] Deze run verwijderd: 0
+[2026-08-05T21:08:29] Verbonden met IMAP.
+[2026-08-05T21:08:30] Verwijderen | kruidvat@mail.kruidvat.nl | Last van zomerkwalen?
+[2026-08-05T21:08:31] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-05T21:08:31] Deze run verwijderd: 1

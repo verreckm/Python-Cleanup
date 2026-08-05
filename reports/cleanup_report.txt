@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 05-08-2026 19:15
+Laatste update: 05-08-2026 21:08
 
 Map: Spam
-Aantal verwijderd: 3
+Aantal verwijderd: 4
 
 • 00:09 | info_at_gytisautek.no@kluswijs.nl
   Leveringsupdate: UwBestelling isOnderweg
@@ -15,5 +15,8 @@ Aantal verwijderd: 3
 • 17:05 | dywbszop@convonix.co.uk
   Uw account vereist bevestiging
 
+• 21:08 | kruidvat@mail.kruidvat.nl
+  Last van zomerkwalen?
+
 ========================================
-Totaal verwijderd: 3
+Totaal verwijderd: 4
