@@ -5,5 +5,12 @@
     "folder": "Spam",
     "sender": "info_at_gytisautek.no@kluswijs.nl",
     "subject": "Leveringsupdate: UwBestelling isOnderweg"
+  },
+  {
+    "date": "2026-08-05",
+    "timestamp": "14:10",
+    "folder": "Spam",
+    "sender": "mail@sandrift.info",
+    "subject": "KRITIEK OPSLAGFOUT"
   }
 ]

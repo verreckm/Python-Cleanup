@@ -1,13 +1,16 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 05-08-2026 12:19
+Laatste update: 05-08-2026 14:10
 
 Map: Spam
-Aantal verwijderd: 1
+Aantal verwijderd: 2
 
 • 00:09 | info_at_gytisautek.no@kluswijs.nl
   Leveringsupdate: UwBestelling isOnderweg
 
+• 14:10 | mail@sandrift.info
+  KRITIEK OPSLAGFOUT
+
 ========================================
-Totaal verwijderd: 1
+Totaal verwijderd: 2
