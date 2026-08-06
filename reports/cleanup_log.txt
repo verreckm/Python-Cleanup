@@ -1,1 +1,5 @@
-[2026-08-06T23:14:24] Verbindingsfout: [Errno 110] Connection timed out
+[2026-08-07T00:38:01] Verbonden met IMAP.
+[2026-08-07T00:38:01] Verwijderen | nieuwsbrief@e.museum.nl | Een vrije zomer met Museumkaart
+[2026-08-07T00:38:02] Verwijderen | info@mail.limburger.nl | Grenzeloos tafelen: laatste kans om je aan te melden
+[2026-08-07T00:38:03] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-08-07T00:38:03] Deze run verwijderd: 2

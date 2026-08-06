@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "date": "2026-08-07",
+    "timestamp": "00:38",
+    "folder": "Spam",
+    "sender": "nieuwsbrief@e.museum.nl",
+    "subject": "Een vrije zomer met Museumkaart"
+  },
+  {
+    "date": "2026-08-07",
+    "timestamp": "00:38",
+    "folder": "Spam",
+    "sender": "info@mail.limburger.nl",
+    "subject": "Grenzeloos tafelen: laatste kans om je aan te melden"
+  }
+]
