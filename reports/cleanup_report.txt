@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 07-08-2026 18:38
+Laatste update: 07-08-2026 19:37
 
 Map: Spam
-Aantal verwijderd: 7
+Aantal verwijderd: 9
 
 • 00:38 | nieuwsbrief@e.museum.nl
   Een vrije zomer met Museumkaart
@@ -27,5 +27,11 @@ Aantal verwijderd: 7
 • 17:41 | jzkqylzt@convonix.co.uk
   Je hebt gewonnen! Open snel voor je AH voucher
 
+• 19:37 | theaaomopei@hotmail.com
+  Automatic reply: — 45293322NL —
+
+• 19:37 | techpulse@bluepixlmedia.info
+  Deze week: WhatsApp trekt batterijen leeg van Samsung-telefoons & malware kan Google-passkeys stelen
+
 ========================================
-Totaal verwijderd: 7
+Totaal verwijderd: 9

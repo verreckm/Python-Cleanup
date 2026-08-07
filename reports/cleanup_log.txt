@@ -1,3 +1,5 @@
-[2026-08-07T18:38:34] Verbonden met IMAP.
-[2026-08-07T18:38:35] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-07T18:38:35] Deze run verwijderd: 0
+[2026-08-07T19:37:37] Verbonden met IMAP.
+[2026-08-07T19:37:37] Verwijderen | theaaomopei@hotmail.com | Automatic reply: — 45293322NL —
+[2026-08-07T19:37:37] Verwijderen | techpulse@bluepixlmedia.info | Deze week: WhatsApp trekt batterijen leeg van Samsung-telefoons & malware kan Google-passkeys stelen
+[2026-08-07T19:37:39] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-08-07T19:37:39] Deze run verwijderd: 2
