@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 07-08-2026 16:02
+Laatste update: 07-08-2026 17:41
 
 Map: Spam
-Aantal verwijderd: 6
+Aantal verwijderd: 7
 
 • 00:38 | nieuwsbrief@e.museum.nl
   Een vrije zomer met Museumkaart
@@ -24,5 +24,8 @@ Aantal verwijderd: 6
 • 10:03 | noreply@gamelores.online
   U heeft een ongelezen bericht!
 
+• 17:41 | jzkqylzt@convonix.co.uk
+  Je hebt gewonnen! Open snel voor je AH voucher
+
 ========================================
-Totaal verwijderd: 6
+Totaal verwijderd: 7
