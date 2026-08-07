@@ -1,5 +1,5 @@
-[2026-08-07T08:02:27] Verbonden met IMAP.
-[2026-08-07T08:02:27] Verwijderen | info_at_gytisautek.no@kluswijs.nl | U bent uitgekozen om dit kostenloos uit te proberen!
-[2026-08-07T08:02:27] Verwijderen | info_at_gytisautek.no@kluswijs.nl | U bent uitgekozen om dit kostenloos uit te proberen!
-[2026-08-07T08:02:29] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
-[2026-08-07T08:02:29] Deze run verwijderd: 2
+[2026-08-07T10:03:06] Verbonden met IMAP.
+[2026-08-07T10:03:06] Verwijderen | kruidvat@mail.kruidvat.nl | Shop nu alle beautyweekenddeals! 💄
+[2026-08-07T10:03:07] Verwijderen | noreply@gamelores.online | U heeft een ongelezen bericht!
+[2026-08-07T10:03:08] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-08-07T10:03:08] Deze run verwijderd: 2

@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 07-08-2026 08:02
+Laatste update: 07-08-2026 10:03
 
 Map: Spam
-Aantal verwijderd: 4
+Aantal verwijderd: 6
 
 • 00:38 | nieuwsbrief@e.museum.nl
   Een vrije zomer met Museumkaart
@@ -18,5 +18,11 @@ Aantal verwijderd: 4
 • 08:02 | info_at_gytisautek.no@kluswijs.nl
   U bent uitgekozen om dit kostenloos uit te proberen!
 
+• 10:03 | kruidvat@mail.kruidvat.nl
+  Shop nu alle beautyweekenddeals! 💄
+
+• 10:03 | noreply@gamelores.online
+  U heeft een ongelezen bericht!
+
 ========================================
-Totaal verwijderd: 4
+Totaal verwijderd: 6
