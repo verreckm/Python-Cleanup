@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 08-08-2026 14:19
+Laatste update: 08-08-2026 15:15
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 15:15 | member@surveymonkeyuser.com
+  Administratieve controle – Bevestiging vereist
+
+========================================
+Totaal verwijderd: 1
