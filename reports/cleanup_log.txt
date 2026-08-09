@@ -1,3 +1,4 @@
-[2026-08-09T14:21:26] Verbonden met IMAP.
-[2026-08-09T14:21:26] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-09T14:21:26] Deze run verwijderd: 0
+[2026-08-09T15:38:59] Verbonden met IMAP.
+[2026-08-09T15:39:00] Verwijderen | milenehiroyoa@outlook.com | Automatisch antwoord: — SIa ’m 0p met een thuisbatterij —
+[2026-08-09T15:39:01] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-09T15:39:01] Deze run verwijderd: 1

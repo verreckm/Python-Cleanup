@@ -1,13 +1,16 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 09-08-2026 14:21
+Laatste update: 09-08-2026 15:39
 
 Map: Spam
-Aantal verwijderd: 1
+Aantal verwijderd: 2
 
 • 04:54 | mekarapanitc@outlook.com
   Automatic reply: — 10756666NL —
 
+• 15:39 | milenehiroyoa@outlook.com
+  Automatisch antwoord: — SIa ’m 0p met een thuisbatterij —
+
 ========================================
-Totaal verwijderd: 1
+Totaal verwijderd: 2
