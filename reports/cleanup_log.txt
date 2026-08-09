@@ -1,3 +1,4 @@
-[2026-08-09T02:41:27] Verbonden met IMAP.
-[2026-08-09T02:41:28] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-09T02:41:28] Deze run verwijderd: 0
+[2026-08-09T04:54:18] Verbonden met IMAP.
+[2026-08-09T04:54:19] Verwijderen | mekarapanitc@outlook.com | Automatic reply: — 10756666NL —
+[2026-08-09T04:54:24] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-09T04:54:24] Deze run verwijderd: 1
