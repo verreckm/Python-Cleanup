@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 10-08-2026 12:53
+Laatste update: 10-08-2026 13:38
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 13:38 | yzzfcuwk@convonix.co.uk
+  Uw account vereist bevestiging
+
+========================================
+Totaal verwijderd: 1

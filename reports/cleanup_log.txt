@@ -1,3 +1,4 @@
-[2026-08-10T12:53:56] Verbonden met IMAP.
-[2026-08-10T12:53:56] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-10T12:53:56] Deze run verwijderd: 0
+[2026-08-10T13:38:47] Verbonden met IMAP.
+[2026-08-10T13:38:48] Verwijderen | yzzfcuwk@convonix.co.uk | Uw account vereist bevestiging
+[2026-08-10T13:38:49] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-10T13:38:49] Deze run verwijderd: 1
