@@ -1,13 +1,16 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 11-08-2026 18:42
+Laatste update: 11-08-2026 19:45
 
 Map: Spam
-Aantal verwijderd: 1
+Aantal verwijderd: 2
 
 • 12:39 | info_at_gytisautek.no@scottishstudentsport.com
   Keukenrenovatie binnen 1 dag!
 
+• 19:45 | techpulse@bluepixlmedia.info
+  Mobiel: Samsung Galaxy Z Fold 8 getest & Pixel 11 Pro XL is nu al in het wild verschenen
+
 ========================================
-Totaal verwijderd: 1
+Totaal verwijderd: 2

@@ -1,3 +1,4 @@
-[2026-08-11T18:42:43] Verbonden met IMAP.
-[2026-08-11T18:42:43] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-11T18:42:43] Deze run verwijderd: 0
+[2026-08-11T19:45:28] Verbonden met IMAP.
+[2026-08-11T19:45:29] Verwijderen | techpulse@bluepixlmedia.info | Mobiel: Samsung Galaxy Z Fold 8 getest & Pixel 11 Pro XL is nu al in het wild verschenen
+[2026-08-11T19:45:30] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-11T19:45:30] Deze run verwijderd: 1
