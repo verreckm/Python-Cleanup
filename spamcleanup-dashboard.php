@@ -179,8 +179,8 @@ function spamcleanup_get_top_senders($limit = 10, $days = 30) {
     $table = $wpdb->prefix . SPAMCLEANUP_TABLE;
 
     // Ruwe sender-waarden ophalen (kunnen "Naam <adres>" of kaal adres zijn, afhankelijk
-    // van wanneer de entry is opgeslagen) en in PHP normaliseren naar alleen het adres,
-    // zodat oude en nieuwe entries van dezelfde afzender samengeteld worden.
+    // van wanneer de entry is opgeslagen) en in PHP normaliseren naar alleen het domein,
+    // zodat alle afzenders van hetzelfde domein samengeteld worden.
     $raw_senders = $wpdb->get_col(
         $wpdb->prepare(
             "SELECT sender FROM $table WHERE run_time >= DATE_SUB(CURDATE(), INTERVAL %d DAY)",
@@ -190,16 +190,17 @@ function spamcleanup_get_top_senders($limit = 10, $days = 30) {
 
     $counts = [];
     foreach ($raw_senders as $raw) {
-        $email = spamcleanup_display_email($raw);
-        $counts[$email] = ($counts[$email] ?? 0) + 1;
+        $email  = spamcleanup_display_email($raw);
+        $domain = spamcleanup_extract_domain($email);
+        $counts[$domain] = ($counts[$domain] ?? 0) + 1;
     }
 
     arsort($counts);
     $top = array_slice($counts, 0, $limit, true);
 
     $result = [];
-    foreach ($top as $email => $total) {
-        $result[] = ['sender' => $email, 'total' => $total];
+    foreach ($top as $domain => $total) {
+        $result[] = ['sender' => $domain, 'total' => $total];
     }
     return $result;
 }
@@ -295,6 +296,15 @@ function spamcleanup_display_email($raw) {
     }
     // Geen "Naam <adres>"-formaat gevonden: al een kaal adres, of onherkenbaar. Toon zoals het is.
     return $raw;
+}
+
+/**
+ * Haalt alleen het domein uit een kaal e-mailadres (bv. "test@voorbeeld-spam.nl" -> "voorbeeld-spam.nl").
+ * Geen "@" gevonden (onherkenbaar adres): toon de waarde ongewijzigd.
+ */
+function spamcleanup_extract_domain($email) {
+    $parts = explode('@', $email);
+    return count($parts) === 2 ? strtolower(trim($parts[1])) : $email;
 }
 
 /* -------------------------------------------------------------------------
@@ -414,7 +424,7 @@ function spamcleanup_render_admin_page() {
                 <?php echo spamcleanup_render_daily_chart_svg(spamcleanup_get_daily_counts(14)); ?>
             </div>
             <div class="card" style="flex:1; min-width:280px; padding:16px 20px;">
-                <h2 style="margin-top:0;">Top 10 afzenders (30 dagen)</h2>
+                <h2 style="margin-top:0;">Top 10 domeinen (30 dagen)</h2>
                 <?php echo spamcleanup_render_top_senders_html(spamcleanup_get_top_senders(10, 30)); ?>
             </div>
         </div>
@@ -522,7 +532,7 @@ function spamcleanup_render_shortcode($atts) {
                 <?php echo spamcleanup_render_daily_chart_svg(spamcleanup_get_daily_counts(14)); ?>
             </div>
             <div style="flex:1; min-width:260px; padding:16px 20px; border:1px solid #ddd; border-radius:6px;">
-                <h3 style="margin-top:0;">Top 10 afzenders (30 dagen)</h3>
+                <h3 style="margin-top:0;">Top 10 domeinen (30 dagen)</h3>
                 <?php echo spamcleanup_render_top_senders_html(spamcleanup_get_top_senders(10, 30)); ?>
             </div>
         </div>
