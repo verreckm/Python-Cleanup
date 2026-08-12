@@ -1,3 +1,4 @@
-[2026-08-12T09:02:06] Verbonden met IMAP.
-[2026-08-12T09:02:06] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-12T09:02:06] Deze run verwijderd: 0
+[2026-08-12T10:57:06] Verbonden met IMAP.
+[2026-08-12T10:57:07] Verwijderen | member@surveymonkeyuser.com | Controle van uw geregistreerde kosten
+[2026-08-12T10:57:08] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-12T10:57:08] Deze run verwijderd: 1
