@@ -1,3 +1,4 @@
-[2026-08-12T18:42:52] Verbonden met IMAP.
-[2026-08-12T18:42:52] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-12T18:42:52] Deze run verwijderd: 0
+[2026-08-12T19:47:08] Verbonden met IMAP.
+[2026-08-12T19:47:09] Verwijderen | info@mail.limburger.nl | Vrijkaarten voor Cultura Nova
+[2026-08-12T19:47:14] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-12T19:47:14] Deze run verwijderd: 1
