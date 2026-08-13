@@ -1,1 +1,1 @@
-[2026-08-13T10:59:12] Verbindingsfout: b'[ALERT] Temporarily blacklisted IP Address - try again later'
+[2026-08-13T12:04:16] Verbindingsfout: [Errno 110] Connection timed out
