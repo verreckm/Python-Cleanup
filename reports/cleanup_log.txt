@@ -1,1 +1,5 @@
-[2026-08-13T12:04:16] Verbindingsfout: [Errno 110] Connection timed out
+[2026-08-13T13:36:20] Verbonden met IMAP.
+[2026-08-13T13:36:20] Verwijderen | sixsfmpm@convonix.co.uk | Betaal nooit meer te veel voor uw eigen zonnestroom
+[2026-08-13T13:36:21] Verwijderen | techpulse@bluepixlmedia.info | Deze week: Spotify Premium in België ineens fors duurder & Microsoft maakt Windows-pc's nóg duurder
+[2026-08-13T13:36:22] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-08-13T13:36:22] Deze run verwijderd: 2
