@@ -1,3 +1,1 @@
-[2026-08-13T09:05:52] Verbonden met IMAP.
-[2026-08-13T09:05:53] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-13T09:05:53] Deze run verwijderd: 0
+[2026-08-13T10:59:12] Verbindingsfout: b'[ALERT] Temporarily blacklisted IP Address - try again later'
