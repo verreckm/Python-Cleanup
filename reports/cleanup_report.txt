@@ -1,7 +1,7 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 13-08-2026 14:38
+Laatste update: 13-08-2026 16:11
 
 Map: Spam
 Aantal verwijderd: 2
