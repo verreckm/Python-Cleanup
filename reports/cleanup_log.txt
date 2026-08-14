@@ -1,4 +1,3 @@
-[2026-08-14T10:45:26] Verbonden met IMAP.
-[2026-08-14T10:45:27] Verwijderen | kruidvat@mail.kruidvat.nl | Heb je deze acties al gescoord?
-[2026-08-14T10:45:28] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
-[2026-08-14T10:45:28] Deze run verwijderd: 1
+[2026-08-14T10:54:13] Verbonden met IMAP.
+[2026-08-14T10:54:14] Geen nieuwe items deze run, WordPress-push overgeslagen.
+[2026-08-14T10:54:14] Deze run verwijderd: 0
