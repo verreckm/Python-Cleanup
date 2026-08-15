@@ -1,3 +1,1 @@
-[2026-08-15T07:14:05] Verbonden met IMAP.
-[2026-08-15T07:14:05] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-15T07:14:05] Deze run verwijderd: 0
+[2026-08-15T08:18:29] Verbindingsfout: [Errno 110] Connection timed out
