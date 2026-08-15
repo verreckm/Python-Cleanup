@@ -1,3 +1,4 @@
-[2026-08-15T11:13:31] Verbonden met IMAP.
-[2026-08-15T11:13:31] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-15T11:13:31] Deze run verwijderd: 0
+[2026-08-15T12:09:57] Verbonden met IMAP.
+[2026-08-15T12:09:58] Verwijderen | info_at_gytisautek.no@smayk.my | Geen onderwerp
+[2026-08-15T12:09:59] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-15T12:09:59] Deze run verwijderd: 1
