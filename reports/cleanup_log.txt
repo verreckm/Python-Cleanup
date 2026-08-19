@@ -1,3 +1,4 @@
-[2026-08-19T18:16:13] Verbonden met IMAP.
-[2026-08-19T18:16:13] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-19T18:16:13] Deze run verwijderd: 0
+[2026-08-19T19:15:20] Verbonden met IMAP.
+[2026-08-19T19:15:20] Verwijderen | info@mail.limburger.nl | Vrijkaarten voor Viva Classic Live in Venlo
+[2026-08-19T19:15:22] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-19T19:15:22] Deze run verwijderd: 1
