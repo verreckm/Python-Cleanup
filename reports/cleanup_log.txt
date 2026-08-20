@@ -1,1 +1,4 @@
-[2026-08-20T18:20:52] Verbindingsfout: [Errno 110] Connection timed out
+[2026-08-20T19:16:56] Verbonden met IMAP.
+[2026-08-20T19:16:56] Verwijderen | info_at_gytisautek.no@somtoday.nl | Ontvang het gratis inspiratiemagazine en een trapcheck op maat
+[2026-08-20T19:16:58] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-20T19:16:58] Deze run verwijderd: 1
