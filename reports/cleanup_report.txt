@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 20-08-2026 01:11
+Laatste update: 20-08-2026 02:27
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 02:27 | kruidvat@mail.kruidvat.nl
+  We denken dat je dit leuk vindt
+
+========================================
+Totaal verwijderd: 1
