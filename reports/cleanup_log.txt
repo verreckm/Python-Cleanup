@@ -1,3 +1,3 @@
-[2026-08-20T08:21:32] Verbonden met IMAP.
-[2026-08-20T08:21:32] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-20T08:21:32] Deze run verwijderd: 0
+[2026-08-20T09:30:47] Verbonden met IMAP.
+[2026-08-20T09:30:47] Geen nieuwe items deze run, WordPress-push overgeslagen.
+[2026-08-20T09:30:47] Deze run verwijderd: 0
