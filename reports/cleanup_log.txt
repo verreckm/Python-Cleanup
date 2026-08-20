@@ -1,4 +1,3 @@
-[2026-08-20T13:14:56] Verbonden met IMAP.
-[2026-08-20T13:14:56] Verwijderen | techpulse@bluepixlmedia.info | Deze week: Belgisch speedpedelecmerk legt Stromer vuur aan de schenen qua verkoopcijfers
-[2026-08-20T13:14:57] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
-[2026-08-20T13:14:57] Deze run verwijderd: 1
+[2026-08-20T14:19:46] Verbonden met IMAP.
+[2026-08-20T14:19:46] Geen nieuwe items deze run, WordPress-push overgeslagen.
+[2026-08-20T14:19:46] Deze run verwijderd: 0
