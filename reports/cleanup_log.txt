@@ -1,4 +1,4 @@
-[2026-08-21T02:30:38] Verbonden met IMAP.
-[2026-08-21T02:30:39] Verwijderen | info_at_gytisautek.no@somtoday.nl | Geen onderwerp
-[2026-08-21T02:30:40] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
-[2026-08-21T02:30:40] Deze run verwijderd: 1
+[2026-08-21T04:14:54] Verbonden met IMAP.
+[2026-08-21T04:14:54] Verwijderen | kruidvat@mail.kruidvat.nl | Terug in het ritme?
+[2026-08-21T04:14:56] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-21T04:14:56] Deze run verwijderd: 1
