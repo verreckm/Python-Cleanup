@@ -1,22 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 21-08-2026 23:11
+Laatste update: 22-08-2026 00:10
 
 Map: Spam
-Aantal verwijderd: 4
+Aantal verwijderd: 1
 
-• 02:30 | info_at_gytisautek.no@somtoday.nl
-  Geen onderwerp
-
-• 04:14 | kruidvat@mail.kruidvat.nl
-  Terug in het ritme?
-
-• 11:22 | info@e.itbuonperte.it
-  Er is opnieuw gereageerd op jouw profiel
-
-• 19:17 | info@mail.limburger.nl
-  Heb jij jouw team al ingeschreven voor De Limburger Pubquiz?
+• 00:10 | info_at_gytisautek.no@somtoday.nl
+  Doe mee aan het Nationale Energie Onderzoek 2026
 
 ========================================
-Totaal verwijderd: 4
+Totaal verwijderd: 1
