@@ -1,3 +1,4 @@
-[2026-08-21T18:17:00] Verbonden met IMAP.
-[2026-08-21T18:17:00] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-21T18:17:00] Deze run verwijderd: 0
+[2026-08-21T19:17:07] Verbonden met IMAP.
+[2026-08-21T19:17:08] Verwijderen | info@mail.limburger.nl | Heb jij jouw team al ingeschreven voor De Limburger Pubquiz?
+[2026-08-21T19:17:09] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-21T19:17:09] Deze run verwijderd: 1

@@ -19,5 +19,12 @@
     "folder": "Spam",
     "sender": "info@e.itbuonperte.it",
     "subject": "Er is opnieuw gereageerd op jouw profiel"
+  },
+  {
+    "date": "2026-08-21",
+    "timestamp": "19:17",
+    "folder": "Spam",
+    "sender": "info@mail.limburger.nl",
+    "subject": "Heb jij jouw team al ingeschreven voor De Limburger Pubquiz?"
   }
 ]
