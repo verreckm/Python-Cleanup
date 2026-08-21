@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 21-08-2026 01:13
+Laatste update: 21-08-2026 02:30
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 02:30 | info_at_gytisautek.no@somtoday.nl
+  Geen onderwerp
+
+========================================
+Totaal verwijderd: 1
