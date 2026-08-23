@@ -1,3 +1,4 @@
-[2026-08-23T01:08:34] Verbonden met IMAP.
-[2026-08-23T01:08:34] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-23T01:08:34] Deze run verwijderd: 0
+[2026-08-23T02:29:52] Verbonden met IMAP.
+[2026-08-23T02:29:52] Verwijderen | info@mailvangeheimedeals.nl | Geen onderwerp
+[2026-08-23T02:29:53] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-23T02:29:53] Deze run verwijderd: 1

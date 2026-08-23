@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 23-08-2026 01:08
+Laatste update: 23-08-2026 02:29
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 02:29 | info@mailvangeheimedeals.nl
+  Geen onderwerp
+
+========================================
+Totaal verwijderd: 1
