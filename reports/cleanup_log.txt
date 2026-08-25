@@ -1,3 +1,4 @@
-[2026-08-25T14:20:35] Verbonden met IMAP.
-[2026-08-25T14:20:35] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-25T14:20:35] Deze run verwijderd: 0
+[2026-08-25T15:38:45] Verbonden met IMAP.
+[2026-08-25T15:38:46] Verwijderen | dqrpbjay@convonix.co.uk | Je hebt gewonnen! Open snel voor je AH voucher
+[2026-08-25T15:38:50] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-25T15:38:50] Deze run verwijderd: 1

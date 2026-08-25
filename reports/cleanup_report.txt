@@ -1,13 +1,16 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 25-08-2026 14:20
+Laatste update: 25-08-2026 15:38
 
 Map: Spam
-Aantal verwijderd: 1
+Aantal verwijderd: 2
 
 • 09:33 | info@email.ns.nl
   Het wordt weer drukker in de trein
 
+• 15:38 | dqrpbjay@convonix.co.uk
+  Je hebt gewonnen! Open snel voor je AH voucher
+
 ========================================
-Totaal verwijderd: 1
+Totaal verwijderd: 2
