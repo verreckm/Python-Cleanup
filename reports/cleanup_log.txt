@@ -1,3 +1,4 @@
-[2026-08-25T08:22:23] Verbonden met IMAP.
-[2026-08-25T08:22:30] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-25T08:22:30] Deze run verwijderd: 0
+[2026-08-25T09:33:46] Verbonden met IMAP.
+[2026-08-25T09:33:46] Verwijderen | info@email.ns.nl | Het wordt weer drukker in de trein
+[2026-08-25T09:33:48] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-25T09:33:48] Deze run verwijderd: 1

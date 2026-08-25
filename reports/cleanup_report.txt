@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 25-08-2026 08:22
+Laatste update: 25-08-2026 09:33
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 09:33 | info@email.ns.nl
+  Het wordt weer drukker in de trein
+
+========================================
+Totaal verwijderd: 1

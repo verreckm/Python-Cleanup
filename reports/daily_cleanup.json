@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "date": "2026-08-25",
+    "timestamp": "09:33",
+    "folder": "Spam",
+    "sender": "info@email.ns.nl",
+    "subject": "Het wordt weer drukker in de trein"
+  }
+]
