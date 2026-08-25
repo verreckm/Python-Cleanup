@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 25-08-2026 19:20
+Laatste update: 25-08-2026 20:19
 
 Map: Spam
-Aantal verwijderd: 2
+Aantal verwijderd: 3
 
 • 09:33 | info@email.ns.nl
   Het wordt weer drukker in de trein
@@ -12,5 +12,8 @@ Aantal verwijderd: 2
 • 15:38 | dqrpbjay@convonix.co.uk
   Je hebt gewonnen! Open snel voor je AH voucher
 
+• 20:19 | techpulse@bluepixlmedia.info
+  Mobiel: Spotify crasht en verkeersinfo Google Maps verdwijnt in Android Auto & Galaxy Z Flip 8 (512 GB) zakt bij Bol onder de 1.000 euro
+
 ========================================
-Totaal verwijderd: 2
+Totaal verwijderd: 3

@@ -1,3 +1,4 @@
-[2026-08-25T19:20:47] Verbonden met IMAP.
-[2026-08-25T19:20:47] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-25T19:20:47] Deze run verwijderd: 0
+[2026-08-25T20:19:49] Verbonden met IMAP.
+[2026-08-25T20:19:50] Verwijderen | techpulse@bluepixlmedia.info | Mobiel: Spotify crasht en verkeersinfo Google Maps verdwijnt in Android Auto & Galaxy Z Flip 8 (512 GB) zakt bij Bol onder de 1.000 euro
+[2026-08-25T20:19:52] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-25T20:19:52] Deze run verwijderd: 1
