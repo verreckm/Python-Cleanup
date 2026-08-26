@@ -1,13 +1,16 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 26-08-2026 12:22
+Laatste update: 26-08-2026 13:17
 
 Map: Spam
-Aantal verwijderd: 1
+Aantal verwijderd: 2
 
 • 07:21 | kruidvat@mail.kruidvat.nl
   Laat dit voordeel niet liggen!
 
+• 13:17 | otlvdrwy@convonix.co.uk
+  Uw account vereist bevestiging
+
 ========================================
-Totaal verwijderd: 1
+Totaal verwijderd: 2
