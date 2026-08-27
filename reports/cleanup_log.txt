@@ -1,4 +1,6 @@
-[2026-08-27T15:11:26] Verbonden met IMAP.
-[2026-08-27T15:11:26] Verwijderen | techpulse@bluepixlmedia.info | Deze week: Garmin komt met sterkere Fenix 9 en 9 Pro & dunne Xiaomi-smartphone met een 10.000mAh-batterij is een feit
-[2026-08-27T15:11:28] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
-[2026-08-27T15:11:28] Deze run verwijderd: 1
+[2026-08-28T01:16:15] 1 oude entry/entries opgeruimd uit daily_cleanup.json (niet van vandaag).
+[2026-08-28T01:16:16] Verbonden met IMAP.
+[2026-08-28T01:16:17] Verwijderen | xbbfyejg@convonix.co.uk | Betaal nooit meer te veel voor uw eigen zonnestroom
+[2026-08-28T01:16:17] Verwijderen | aoniehvu@convonix.co.uk | Uw kussen kan uw nek beschadigen (hier is het bewijs)
+[2026-08-28T01:16:18] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-08-28T01:16:18] Deze run verwijderd: 2
