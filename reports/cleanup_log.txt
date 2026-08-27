@@ -1,4 +1,4 @@
-[2026-08-27T04:18:24] 3 oude entry/entries opgeruimd uit daily_cleanup.json (niet van vandaag).
-[2026-08-27T04:18:25] Verbonden met IMAP.
-[2026-08-27T04:18:25] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-27T04:18:25] Deze run verwijderd: 0
+[2026-08-27T15:11:26] Verbonden met IMAP.
+[2026-08-27T15:11:26] Verwijderen | techpulse@bluepixlmedia.info | Deze week: Garmin komt met sterkere Fenix 9 en 9 Pro & dunne Xiaomi-smartphone met een 10.000mAh-batterij is een feit
+[2026-08-27T15:11:28] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-27T15:11:28] Deze run verwijderd: 1
