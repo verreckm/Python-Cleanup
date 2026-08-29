@@ -1,3 +1,4 @@
-[2026-08-29T11:27:22] Verbonden met IMAP.
-[2026-08-29T11:27:26] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-08-29T11:27:26] Deze run verwijderd: 0
+[2026-08-29T16:43:59] Verbonden met IMAP.
+[2026-08-29T16:43:59] Verwijderen | info_at_gytisautek.no@detailspatternsannouncements.fr | Geen onderwerp
+[2026-08-29T16:44:01] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-08-29T16:44:01] Deze run verwijderd: 1
