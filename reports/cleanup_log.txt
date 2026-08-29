@@ -1,4 +1,4 @@
-[2026-08-28T21:39:25] Verbonden met IMAP.
-[2026-08-28T21:39:25] Verwijderen | qcwybfih@convonix.co.uk | Status Alert: Kritieke update vereist voor uw antivirus-pakket
-[2026-08-28T21:39:27] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
-[2026-08-28T21:39:27] Deze run verwijderd: 1
+[2026-08-29T04:29:55] 3 oude entry/entries opgeruimd uit daily_cleanup.json (niet van vandaag).
+[2026-08-29T04:29:57] Verbonden met IMAP.
+[2026-08-29T04:29:57] Geen nieuwe items deze run, WordPress-push overgeslagen.
+[2026-08-29T04:29:57] Deze run verwijderd: 0
