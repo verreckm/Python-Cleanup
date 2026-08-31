@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 31-08-2026 19:15
+Laatste update: 01-09-2026 00:05
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 00:05 | info@saa.nl
+  Gratis Hypotheekcheck? Ontvang nu een persoonlijke berekening.
+
+========================================
+Totaal verwijderd: 1
