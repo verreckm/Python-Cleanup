@@ -1,3 +1,4 @@
-[2026-09-01T19:00:46] Verbonden met IMAP.
-[2026-09-01T19:00:46] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-09-01T19:00:46] Deze run verwijderd: 0
+[2026-09-01T22:12:18] Verbonden met IMAP.
+[2026-09-01T22:12:18] Verwijderen | techpulse@bluepixlmedia.info | Mobiel: Google Berichten stuurt plots oude berichten naar andere personen & deze Ultra is best verkochte Android-smartphone ter wereld
+[2026-09-01T22:12:20] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-09-01T22:12:20] Deze run verwijderd: 1
