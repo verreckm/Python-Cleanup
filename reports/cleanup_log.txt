@@ -1,5 +1,4 @@
-[2026-09-02T20:10:11] Verbonden met IMAP.
-[2026-09-02T20:10:11] Verwijderen | oyhrkhjj@convonix.co.uk | *Alsjeblieft, een Hema cadeau voor Moederdag!
-[2026-09-02T20:10:11] Verwijderen | info@mail.limburger.nl | Luister en kijk nu naar Kessels in stukjes
-[2026-09-02T20:10:13] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
-[2026-09-02T20:10:13] Deze run verwijderd: 2
+[2026-09-02T23:23:09] Verbonden met IMAP.
+[2026-09-02T23:23:09] Verwijderen | kruidvat@mail.kruidvat.nl | Hier ga je blij van worden👀
+[2026-09-02T23:23:11] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-09-02T23:23:11] Deze run verwijderd: 1

@@ -33,5 +33,12 @@
     "folder": "Spam",
     "sender": "info@mail.limburger.nl",
     "subject": "Luister en kijk nu naar Kessels in stukjes"
+  },
+  {
+    "date": "2026-09-02",
+    "timestamp": "23:23",
+    "folder": "Spam",
+    "sender": "kruidvat@mail.kruidvat.nl",
+    "subject": "Hier ga je blij van worden👀"
   }
 ]
