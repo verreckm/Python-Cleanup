@@ -1,4 +1,5 @@
-[2026-09-02T16:45:35] Verbonden met IMAP.
-[2026-09-02T16:45:36] Verwijderen | bpujhdew@convonix.co.uk | 24 uur resterend: uw bescherming stopt
-[2026-09-02T16:45:38] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
-[2026-09-02T16:45:38] Deze run verwijderd: 1
+[2026-09-02T20:10:11] Verbonden met IMAP.
+[2026-09-02T20:10:11] Verwijderen | oyhrkhjj@convonix.co.uk | *Alsjeblieft, een Hema cadeau voor Moederdag!
+[2026-09-02T20:10:11] Verwijderen | info@mail.limburger.nl | Luister en kijk nu naar Kessels in stukjes
+[2026-09-02T20:10:13] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-09-02T20:10:13] Deze run verwijderd: 2
