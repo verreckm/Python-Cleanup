@@ -1,3 +1,5 @@
-[2026-09-02T02:36:14] Verbonden met IMAP.
-[2026-09-02T02:36:15] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-09-02T02:36:15] Deze run verwijderd: 0
+[2026-09-02T07:10:00] Verbonden met IMAP.
+[2026-09-02T07:10:01] Verwijderen | info_at_gytisautek.no@detailspatternsannouncements.fr | Doe mee aan het Nationale Energie Onderzoek 2026
+[2026-09-02T07:10:01] Verwijderen | info_at_gytisautek.no@detailspatternsannouncements.fr | Doe mee aan het Nationale Energie Onderzoek 2026
+[2026-09-02T07:10:02] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-09-02T07:10:02] Deze run verwijderd: 2
