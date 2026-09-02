@@ -1,3 +1,4 @@
-[2026-09-02T12:01:05] Verbonden met IMAP.
-[2026-09-02T12:01:06] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-09-02T12:01:06] Deze run verwijderd: 0
+[2026-09-02T16:45:35] Verbonden met IMAP.
+[2026-09-02T16:45:36] Verwijderen | bpujhdew@convonix.co.uk | 24 uur resterend: uw bescherming stopt
+[2026-09-02T16:45:38] WordPress-push gelukt: {'status': 'ok', 'inserted': 1}
+[2026-09-02T16:45:38] Deze run verwijderd: 1
