@@ -1,3 +1,5 @@
-[2026-09-03T08:33:55] Verbonden met IMAP.
-[2026-09-03T08:33:55] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-09-03T08:33:55] Deze run verwijderd: 0
+[2026-09-03T13:46:38] Verbonden met IMAP.
+[2026-09-03T13:46:39] Verwijderen | ikea@news.email.ikea.nl | KONSTRUNDA: betaalbare kunstobjecten
+[2026-09-03T13:46:39] Verwijderen | techpulse@bluepixlmedia.info | Deze week: Heb je nog losse antivirus nodig op Windows? Dit zeggen de tests
+[2026-09-03T13:46:40] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-09-03T13:46:40] Deze run verwijderd: 2

@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "date": "2026-09-03",
+    "timestamp": "13:46",
+    "folder": "Spam",
+    "sender": "ikea@news.email.ikea.nl",
+    "subject": "KONSTRUNDA: betaalbare kunstobjecten"
+  },
+  {
+    "date": "2026-09-03",
+    "timestamp": "13:46",
+    "folder": "Spam",
+    "sender": "techpulse@bluepixlmedia.info",
+    "subject": "Deze week: Heb je nog losse antivirus nodig op Windows? Dit zeggen de tests"
+  }
+]
