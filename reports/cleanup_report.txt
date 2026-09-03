@@ -1,10 +1,10 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 03-09-2026 17:18
+Laatste update: 03-09-2026 20:55
 
 Map: Spam
-Aantal verwijderd: 2
+Aantal verwijderd: 4
 
 • 13:46 | ikea@news.email.ikea.nl
   KONSTRUNDA: betaalbare kunstobjecten
@@ -12,5 +12,11 @@ Aantal verwijderd: 2
 • 13:46 | techpulse@bluepixlmedia.info
   Deze week: Heb je nog losse antivirus nodig op Windows? Dit zeggen de tests
 
+• 20:55 | mijglbni@convonix.co.uk
+  Jouw persoonlijke Jumbo-verrassing staat klaar
+
+• 20:55 | vcercaux@convonix.co.uk
+  Melding: Er staat een nieuw bericht voor u klaar
+
 ========================================
-Totaal verwijderd: 2
+Totaal verwijderd: 4

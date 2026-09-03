@@ -1,3 +1,5 @@
-[2026-09-03T17:18:15] Verbonden met IMAP.
-[2026-09-03T17:18:15] Geen nieuwe items deze run, WordPress-push overgeslagen.
-[2026-09-03T17:18:15] Deze run verwijderd: 0
+[2026-09-03T20:55:42] Verbonden met IMAP.
+[2026-09-03T20:55:43] Verwijderen | mijglbni@convonix.co.uk | Jouw persoonlijke Jumbo-verrassing staat klaar
+[2026-09-03T20:55:43] Verwijderen | vcercaux@convonix.co.uk | Melding: Er staat een nieuw bericht voor u klaar
+[2026-09-03T20:55:45] WordPress-push gelukt: {'status': 'ok', 'inserted': 2}
+[2026-09-03T20:55:45] Deze run verwijderd: 2
