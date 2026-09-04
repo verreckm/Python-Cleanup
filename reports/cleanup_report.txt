@@ -1,6 +1,13 @@
 Spam Cleanup Rapport
 ========================================
 
-Laatste update: 04-09-2026 08:36
+Laatste update: 04-09-2026 13:48
 
-Er zijn vandaag geen berichten verwijderd.
+Map: Spam
+Aantal verwijderd: 1
+
+• 13:48 | nieuwsbrief@e.museum.nl
+  Jouw tips voor september
+
+========================================
+Totaal verwijderd: 1
